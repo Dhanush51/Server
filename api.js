@@ -5,7 +5,7 @@ import bcrypt from "bcrypt"
 import dotenv from "dotenv";
 import session from "express-session";
 import  MongoStore from "connect-mongo";
-import UserModel from "../model/User.js";
+import UserModel from "./model/User.js";
 
 dotenv.config();
 const app = express();
