@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: "https://loginapp-7ddh.onrender.com // Replace with your frontend's URL",
+    origin: "https://loginapp-7ddh.onrender.com",
     credentials: true
 }));
 
