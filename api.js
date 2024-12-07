@@ -10,11 +10,11 @@ import UserModel from "./model/User.js";
 dotenv.config();
 const app = express();
 app.use(express.json());
-app.use(cors())
-//     ({
-//     origin: "https://loginapp-7ddh.onrender.com",
-//     credentials: true
-// }));
+app.use(cors
+    ({
+    origin: "https://loginapp-7ddh.onrender.com",
+    credentials: true
+}));
 
 
 mongoose.connect(process.env.MONGO_URI)
