@@ -64,7 +64,7 @@ app.post("/login", async (req, res) => {
                 req.session.user = { id: user._id, name: user.name, email: user.email };
                 // console.log(email);
                 console.log(user.name);
-                res.json("Success");
+                res.status(200).json("Success");
             } else {
                 res.status(401).json("Password doesn't match");
             }
